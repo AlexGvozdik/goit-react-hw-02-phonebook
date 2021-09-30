@@ -5,7 +5,7 @@ const Filter = ({filtered, value}) => {
     return (
         <MyLabel>
             Find contacts by name
-            <input type='text' name='filter' value={value} onChange={(e)=> filtered(e)}/>
+            <input type='text' name='filter' value={value} onChange={filtered}/>
         </MyLabel>
     )
 }
